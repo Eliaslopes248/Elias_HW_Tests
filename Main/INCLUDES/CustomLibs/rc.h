@@ -15,6 +15,9 @@
 
 #include <iostream>
 
+#ifndef RC_H
+#define RC_H
+
 class RC
 {
     enum CODES
@@ -55,3 +58,5 @@ public:
         }
     }
 };
+
+#endif

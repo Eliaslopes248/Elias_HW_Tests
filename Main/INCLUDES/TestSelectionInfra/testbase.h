@@ -7,6 +7,8 @@
  */
 
 #include <iostream>
+#include <string>
+#include <vector>
 
 #ifndef TESTBASE_H
 #define TESTBASE_H
@@ -20,6 +22,7 @@ private:
 
 public:
     // defualt test functions must be overridden
+    virtual void ParseArgs(const std::vector<std::string> args) = 0;
     virtual void SetUp() = 0;
     virtual void IsSupported() = 0;
     virtual void Run() = 0;
