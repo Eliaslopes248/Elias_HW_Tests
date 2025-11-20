@@ -17,7 +17,6 @@ class TestBase
 {
 
 private:
-    int m_testNumber;
     std::string m_testName;
 
 public:

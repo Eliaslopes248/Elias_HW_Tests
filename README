@@ -1,0 +1,60 @@
+=====================================================================================
+THIS PROJECT IS MADE TO HELP ME PRACTICE C++ AND LEARN SYSTEM LEVEL SOFTWARE
+=====================================================================================
+
+
+
+=====================================================================================
+CURRENT FEATURE/TEST I'M WORKING ON
+=====================================================================================
+
+🧠 Test Idea: Process Creation and Timing Test
+🎯 Goal
+
+Understand:
+
+How Linux creates a new process (fork() and exec()).
+
+How long it takes to create and finish a process.
+
+What happens when you create many processes quickly.
+
+This test is simple conceptually but touches real Linux internals — process management, scheduling, and timing.
+
+🧩 What You’ll Do
+
+Create a child process using fork().
+
+The child will run a simple command like ls or echo.
+
+Measure how long it takes from before the fork to after the child finishes.
+
+Repeat that process many times (e.g. 100 or 1000 loops).
+
+Compute the average process creation + completion time.
+
+📈 What You’re Measuring
+
+The latency of process creation and termination on your system.
+
+The consistency (or variability) — some forks may take longer if your system is busy.
+
+This gives you insight into:
+
+CPU scheduling.
+
+Process table overhead.
+
+The cost difference between processes and threads (later, you can compare).
+
+🧾 Expected Output
+
+You’ll print something like:
+
+Test: Process creation time
+Number of iterations: 1000
+Average fork+exec+wait time: 1.35 milliseconds
+Minimum: 1.12 ms
+Maximum: 2.08 ms
+
+

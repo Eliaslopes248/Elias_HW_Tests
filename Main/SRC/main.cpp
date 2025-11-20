@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
     
-    PrintPASS();
+    //PrintPASS();
 
     return 0;
 }
