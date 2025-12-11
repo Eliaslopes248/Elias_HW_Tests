@@ -1,0 +1,12 @@
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/CMakeFiles/my_sys_tests.dir
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/CMakeFiles/edit_cache.dir
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/CMakeFiles/rebuild_cache.dir
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/INCLUDES/CustomLibs/CMakeFiles/CUSTOM_LIBS.dir
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/INCLUDES/CustomLibs/CMakeFiles/edit_cache.dir
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/INCLUDES/CustomLibs/CMakeFiles/rebuild_cache.dir
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/INCLUDES/TestSelectionInfra/CMakeFiles/TEST_INFRASTRUCTURE.dir
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/INCLUDES/TestSelectionInfra/CMakeFiles/edit_cache.dir
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/INCLUDES/TestSelectionInfra/CMakeFiles/rebuild_cache.dir
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/TESTS/CMakeFiles/TESTS.dir
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/TESTS/CMakeFiles/edit_cache.dir
+/Users/eliasmini/all-projects/Elias_HW_Tests/build/TESTS/CMakeFiles/rebuild_cache.dir

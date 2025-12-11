@@ -23,7 +23,7 @@ void loadSingleton(char* args[], int start, int end, vector<string>& test_args){
 int main(int argc, char *argv[])
 {
     // uses this variable if we run a single test
-    int test_to_run;
+    int test_to_run = INT_MIN;
     vector<string> test_args;
 
     // uses this variable if we run a test suite
@@ -53,11 +53,19 @@ int main(int argc, char *argv[])
 
     }
 
+
+    if (test_to_run == INT_MIN)
+    {
+        std::cout << "No tests ran: Exits Code 0" << std::endl;
+        PrintPASS();
+        exit(0);
+    }
     // get gloabl test manager: std::map<int, std::pair<std::string, Factory>> is returned
     const auto &tests = TestRegistry::Instance().GetTests();
 
     std::cout << "Running test number: " << test_to_run << std::endl;
     try {
+        // gets intended test by -test arg
         const auto &TEST = tests.at(test_to_run).second();
         TEST->IsSupported();
 
@@ -70,10 +78,11 @@ int main(int argc, char *argv[])
 
     } catch (const std::out_of_range& e) {
         printf("Test number passed doesnt exist...");
+        PrintFAIL();
         exit(EXIT_FAILURE);
     }
-    
-    //PrintPASS();
+    // sucessful run
+    PrintPASS();
 
     return 0;
 }

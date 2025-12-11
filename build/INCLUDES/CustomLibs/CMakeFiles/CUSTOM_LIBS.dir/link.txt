@@ -1,0 +1,2 @@
+/usr/bin/ar qc libCUSTOM_LIBS.a CMakeFiles/CUSTOM_LIBS.dir/__/__/SRC/platform.cpp.o
+/usr/bin/ranlib libCUSTOM_LIBS.a

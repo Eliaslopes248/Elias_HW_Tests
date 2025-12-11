@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/eliasmini/all-projects/Elias_HW_Tests/build/cmake_install.cmake",
+		"/Users/eliasmini/all-projects/Elias_HW_Tests/build/INCLUDES/CustomLibs/cmake_install.cmake",
+		"/Users/eliasmini/all-projects/Elias_HW_Tests/build/INCLUDES/TestSelectionInfra/cmake_install.cmake",
+		"/Users/eliasmini/all-projects/Elias_HW_Tests/build/TESTS/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

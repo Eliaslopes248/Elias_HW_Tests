@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/Users/eliasmini/all-projects/Elias_HW_Tests/build",
+  "command": "/usr/bin/clang++  -I/Users/eliasmini/all-projects/Elias_HW_Tests/Main/INCLUDES/CustomLibs -I/Users/eliasmini/all-projects/Elias_HW_Tests/Main/INCLUDES/TestSelectionInfra -g -std=gnu++17 -arch arm64 -o CMakeFiles/my_sys_tests.dir/SRC/main.cpp.o -c /Users/eliasmini/all-projects/Elias_HW_Tests/Main/SRC/main.cpp",
+  "file": "/Users/eliasmini/all-projects/Elias_HW_Tests/Main/SRC/main.cpp",
+  "output": "CMakeFiles/my_sys_tests.dir/SRC/main.cpp.o"
+},
+{
+  "directory": "/Users/eliasmini/all-projects/Elias_HW_Tests/build/INCLUDES/CustomLibs",
+  "command": "/usr/bin/clang++  -I/Users/eliasmini/all-projects/Elias_HW_Tests/Main/INCLUDES/CustomLibs -g -std=gnu++17 -arch arm64 -o CMakeFiles/CUSTOM_LIBS.dir/__/__/SRC/platform.cpp.o -c /Users/eliasmini/all-projects/Elias_HW_Tests/Main/SRC/platform.cpp",
+  "file": "/Users/eliasmini/all-projects/Elias_HW_Tests/Main/SRC/platform.cpp",
+  "output": "INCLUDES/CustomLibs/CMakeFiles/CUSTOM_LIBS.dir/__/__/SRC/platform.cpp.o"
+},
+{
+  "directory": "/Users/eliasmini/all-projects/Elias_HW_Tests/build/TESTS",
+  "command": "/usr/bin/clang++  -I/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS -g -std=gnu++17 -arch arm64 -o CMakeFiles/TESTS.dir/test0/test0.cpp.o -c /Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test0/test0.cpp",
+  "file": "/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test0/test0.cpp",
+  "output": "TESTS/CMakeFiles/TESTS.dir/test0/test0.cpp.o"
+},
+{
+  "directory": "/Users/eliasmini/all-projects/Elias_HW_Tests/build/TESTS",
+  "command": "/usr/bin/clang++  -I/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS -g -std=gnu++17 -arch arm64 -o CMakeFiles/TESTS.dir/test1/device_profile.cpp.o -c /Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test1/device_profile.cpp",
+  "file": "/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test1/device_profile.cpp",
+  "output": "TESTS/CMakeFiles/TESTS.dir/test1/device_profile.cpp.o"
+},
+{
+  "directory": "/Users/eliasmini/all-projects/Elias_HW_Tests/build/TESTS",
+  "command": "/usr/bin/clang++  -I/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS -g -std=gnu++17 -arch arm64 -o CMakeFiles/TESTS.dir/test2/test2.cpp.o -c /Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test2/test2.cpp",
+  "file": "/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test2/test2.cpp",
+  "output": "TESTS/CMakeFiles/TESTS.dir/test2/test2.cpp.o"
+},
+{
+  "directory": "/Users/eliasmini/all-projects/Elias_HW_Tests/build/TESTS",
+  "command": "/usr/bin/clang++  -I/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS -g -std=gnu++17 -arch arm64 -o CMakeFiles/TESTS.dir/test3/test3.cpp.o -c /Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test3/test3.cpp",
+  "file": "/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test3/test3.cpp",
+  "output": "TESTS/CMakeFiles/TESTS.dir/test3/test3.cpp.o"
+}
+]

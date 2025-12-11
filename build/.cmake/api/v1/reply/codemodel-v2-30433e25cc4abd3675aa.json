@@ -1,0 +1,138 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "INCLUDES/CustomLibs",
+					"jsonFile" : "directory-INCLUDES.CustomLibs-Debug-8f331582e11c200aed46.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "INCLUDES/CustomLibs",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "INCLUDES/TestSelectionInfra",
+					"jsonFile" : "directory-INCLUDES.TestSelectionInfra-Debug-22b44646ad2899bc87e6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "INCLUDES/TestSelectionInfra",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "TESTS",
+					"jsonFile" : "directory-TESTS-Debug-aae966d3a117c7caec82.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "TESTS",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "my_sys_tests",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "CUSTOM_LIBS::@c48556c32c78e28d9f77",
+					"jsonFile" : "target-CUSTOM_LIBS-Debug-30649ecd68af4f065133.json",
+					"name" : "CUSTOM_LIBS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "TESTS::@c4fcfa788507cf725b52",
+					"jsonFile" : "target-TESTS-Debug-b655a576f3c71bf30b28.json",
+					"name" : "TESTS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "TEST_INFRASTRUCTURE::@23e083e45800a426c7b9",
+					"jsonFile" : "target-TEST_INFRASTRUCTURE-Debug-52f9c21079c2347d6896.json",
+					"name" : "TEST_INFRASTRUCTURE",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_sys_tests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_sys_tests-Debug-528751b367bacb0e2abe.json",
+					"name" : "my_sys_tests",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/eliasmini/all-projects/Elias_HW_Tests/build",
+		"source" : "/Users/eliasmini/all-projects/Elias_HW_Tests/Main"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

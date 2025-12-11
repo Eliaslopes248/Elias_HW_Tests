@@ -50,5 +50,6 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "text_encoding": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/Users/eliasmini/all-projects/Elias_HW_Tests/Main"
 }
