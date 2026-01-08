@@ -17,6 +17,9 @@ add_subdirectory(TESTS)
 # link libraries
 target_link_libraries(${PROJECT_NAME} CUSTOM_LIBS)
 target_link_libraries(${PROJECT_NAME} TEST_INFRASTRUCTURE)
+target_link_libraries(${PROJECT_NAME} TESTS)
+
+
 # Force load TESTS library to include registration code
 if(APPLE)
     target_link_options(${PROJECT_NAME} PRIVATE -Wl,-force_load,$<TARGET_FILE:TESTS>)

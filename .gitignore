@@ -1,0 +1,6 @@
+# EXCLUDES THE ./BUILD DIRECTORY
+./build
+
+
+# SHELL (TEST 3) build directory
+./Main/TESTS/test3/shell/build

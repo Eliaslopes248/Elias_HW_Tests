@@ -1,4 +1,4 @@
-# Install script for directory: /Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test3/shell/include
+# Install script for directory: /Users/eliaslopes/REPOS/Elias_HW_Tests/Main/TESTS/test3/shell/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test3/shell/build/include/install_local_manifest.txt"
+  file(WRITE "/Users/eliaslopes/REPOS/Elias_HW_Tests/Main/TESTS/test3/shell/build/include/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

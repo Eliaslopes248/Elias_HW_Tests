@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test0/test0.cpp" "TESTS/CMakeFiles/TESTS.dir/test0/test0.cpp.o" "gcc" "TESTS/CMakeFiles/TESTS.dir/test0/test0.cpp.o.d"
-  "/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test1/device_profile.cpp" "TESTS/CMakeFiles/TESTS.dir/test1/device_profile.cpp.o" "gcc" "TESTS/CMakeFiles/TESTS.dir/test1/device_profile.cpp.o.d"
-  "/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test2/test2.cpp" "TESTS/CMakeFiles/TESTS.dir/test2/test2.cpp.o" "gcc" "TESTS/CMakeFiles/TESTS.dir/test2/test2.cpp.o.d"
-  "/Users/eliasmini/all-projects/Elias_HW_Tests/Main/TESTS/test3/test3.cpp" "TESTS/CMakeFiles/TESTS.dir/test3/test3.cpp.o" "gcc" "TESTS/CMakeFiles/TESTS.dir/test3/test3.cpp.o.d"
+  "/Users/eliaslopes/REPOS/Elias_HW_Tests/Main/TESTS/test0/test0.cpp" "TESTS/CMakeFiles/TESTS.dir/test0/test0.cpp.o" "gcc" "TESTS/CMakeFiles/TESTS.dir/test0/test0.cpp.o.d"
+  "/Users/eliaslopes/REPOS/Elias_HW_Tests/Main/TESTS/test1/device_profile.cpp" "TESTS/CMakeFiles/TESTS.dir/test1/device_profile.cpp.o" "gcc" "TESTS/CMakeFiles/TESTS.dir/test1/device_profile.cpp.o.d"
+  "/Users/eliaslopes/REPOS/Elias_HW_Tests/Main/TESTS/test2/test2.cpp" "TESTS/CMakeFiles/TESTS.dir/test2/test2.cpp.o" "gcc" "TESTS/CMakeFiles/TESTS.dir/test2/test2.cpp.o.d"
+  "/Users/eliaslopes/REPOS/Elias_HW_Tests/Main/TESTS/test3/test3.cpp" "TESTS/CMakeFiles/TESTS.dir/test3/test3.cpp.o" "gcc" "TESTS/CMakeFiles/TESTS.dir/test3/test3.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
