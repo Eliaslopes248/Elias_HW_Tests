@@ -1,2 +1,0 @@
-/usr/bin/ar qc libTESTS.a CMakeFiles/TESTS.dir/test0/test0.cpp.o CMakeFiles/TESTS.dir/test1/device_profile.cpp.o CMakeFiles/TESTS.dir/test2/test2.cpp.o CMakeFiles/TESTS.dir/test3/test3.cpp.o
-/usr/bin/ranlib libTESTS.a

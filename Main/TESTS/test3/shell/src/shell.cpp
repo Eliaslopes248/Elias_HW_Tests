@@ -1,4 +1,5 @@
 #include <array>
+#include <cstddef>
 #include <cstdio>
 #include <cstdlib>
 #include <iostream>
@@ -10,8 +11,9 @@
 #include <unistd.h>
 #include <pwd.h>
 #include <vector>
-
-
+#include <set>
+// testing method definitions
+command_node* get_test_cmd_nodes();
 // --------------------------------------------------------------------
 // shell class implementation
 // --------------------------------------------------------------------
@@ -125,24 +127,61 @@ void SH::print_user(std::string* prompt)
 void SH::cleanup(){}
 
 //------------------------------------------------------------------
-std::vector<std::string> SH::command_split(std::string s, const char delimiter)
+std::vector<std::string> SH::tokenize(const std::string s, char delimiter)
 {
-    size_t start=0;
-    size_t end=s.find_first_of(delimiter);
-    
+    size_t n = s.size();
+    if (n == 0) return {};
+
+    size_t start = 0, end = 0;
     std::vector<std::string> output;
-    
-    while (end <= std::string::npos)
-    {
-	    output.emplace_back(s.substr(start, end-start));
 
-	    if (end == std::string::npos)
-	    	break;
+    while (end < n) {
+        if (s[end] == '"') {
+            end++;
+            while (end < n && s[end] != '"') {
+                end++;
+            }
+        }
 
-    	start=end+1;
-    	end = s.find_first_of(delimiter, start);
+        if (end < n && s[end] == delimiter) {
+            output.push_back(s.substr(start, end - start));
+            start = end + 1;
+        }
+
+        end++;
     }
-    
+
+    if (start < n) {
+        output.push_back(s.substr(start, n - start));
+    }
+
+    return output;
+}
+
+std::vector<std::string> SH::group_tokens(const std::vector<std::string>& tokens)
+{
+    size_t n = tokens.size();
+    std::vector<std::string> output;
+
+    // operators
+    std::set<std::string> operators = {"||", "&&", ";", "|", "&"};
+
+    for(int i=0; i<n; i++){
+        if (operators.find(tokens[i]) != operators.end()){
+            output.push_back(tokens[i]);
+            continue;
+        }
+
+        // add to group until the next operator
+        std::string cmd = "";
+        while(i < n && operators.find(tokens[i]) == operators.end())
+        { 
+            cmd += tokens[i] + " ";
+            i++; 
+        }
+        i--;
+        output.push_back(cmd);
+    }
     return output;
 }
 
@@ -155,8 +194,20 @@ void SH::get_input(){
             // get input line from terminal
             std::getline(std::cin, cmd);
             // split the shell cmds by spaces
-            std::vector<std::string> cmds = command_split(cmd, ' ');
-            exit(0);
+            std::vector<std::string> tokens = tokenize(cmd, ' ');
+            // turn tokens into command groups
+            std::vector<std::string> cmd_strings = group_tokens(tokens);
+
+            // create nodes
+
+            
+            /**
+                FIXME: testing group method
+            */
+            command_tree* tree;
+            tree->make_tree(cmd_strings);
+
+            //exit(0);
         }else{
             // execute the scripts in the input file
         }
@@ -194,4 +245,91 @@ int SH::run()
     delete prompt;
     cleanup();
     return 0;
+}
+
+// -----------------------------------------------------------
+
+/**
+    implementation for command tree data structure
+*/
+
+#define CMD_TREE command_tree
+//----------------------------------------------------------------
+// constructors
+CMD_TREE::command_tree(command_node* root)
+{
+    // init fields
+    this->root = root;
+    this->size = root? get_size(root) : 0; 
+}
+CMD_TREE::command_tree()
+{
+    // init fields
+    this->root = nullptr;
+    this->size = 0; 
+}
+//----------------------------------------------------------------
+// TREE OPERTATIONS
+int CMD_TREE::get_size()
+{
+    return get_size(this->root);
+}
+int CMD_TREE::get_size(command_node* root)
+{
+    if (!root) return 0;
+    return 
+        1 + get_size(root->left) + get_size(root->right);
+}
+
+void CMD_TREE::inOrderTrav(command_node* root)
+{
+    if (root == nullptr) return;
+    inOrderTrav(root->left);
+    std::cout << '[' << root->data << ']' << ' ';
+    inOrderTrav(root->right);
+}
+
+void CMD_TREE::printTree()
+{
+    inOrderTrav(this->root);
+}
+
+void CMD_TREE:: make_tree(std::vector<std::string> commands)
+{
+    size_t n = commands.size();
+    if (n==0) return;
+    // reserve n slots for commands
+    std::vector<command_node*> nodes(n);
+
+    // create nodes
+    for (std::string& s : commands)
+    { 
+        std::cout << "[" << s << "] ";
+        command_node* cmd = new command_node;
+        cmd->data = s;
+        nodes.push_back(cmd);
+    }
+
+    /**
+        FIXME: Implement inserting nodes in tree
+    */
+}
+
+// ------------------ TESTING ---------------------------------
+
+command_node* get_test_cmd_nodes(){
+    // create root node
+    command_node* root = new command_node;
+    root->data = "echo";
+    // make two children nodes
+    command_node* node1 = new command_node;
+    node1->data = "'hello world'";
+    command_node* node2 = new command_node;
+    node2->data = "nano";
+
+    // set children
+    root->left = node1;
+    root->right = node2;
+
+    return root;
 }

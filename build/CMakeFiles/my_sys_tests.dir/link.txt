@@ -1,1 +1,0 @@
-/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-force_load,/Users/eliaslopes/REPOS/Elias_HW_Tests/build/TESTS/libTESTS.a CMakeFiles/my_sys_tests.dir/SRC/main.cpp.o -o my_sys_tests  INCLUDES/CustomLibs/libCUSTOM_LIBS.a TESTS/libTESTS.a
